@@ -37,7 +37,7 @@ XOR requires nonlinear decision boundaries, proving **universal approximation ca
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/optical-perceptron.git
+git clone https://github.com/yoctotta-softwares/optical-perceptron.git
 cd optical-perceptron
 
 # Install dependencies (just numpy)
@@ -155,12 +155,12 @@ Key difference: Our weights are **continuously tunable angles** enabling online 
 If you use this work, please cite:
 
 ```bibtex
-@misc{optical_perceptron_2024,
-  author = {Kumar, Suraj},
+@misc{optical_perceptron_2025,
+  author = {Satpathy, Surajbhan},
   title = {Frequency-Selective Optical Perceptrons with Angle-Tunable Weights},
-  year = {2024},
+  year = {2025},
   publisher = {GitHub},
-  url = {https://github.com/YOUR_USERNAME/optical-perceptron}
+  url = {https://github.com/yoctotta-softwares/optical-perceptron}
 }
 ```
 
