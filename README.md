@@ -171,3 +171,13 @@ MIT License - see [LICENSE](LICENSE)
 ## 🙏 Acknowledgments
 
 Mathematical validation and simulation code developed with assistance from Claude (Anthropic). The core concept of angle-tunable frequency-selective weights for continuous optical learning was conceived by the human author.
+
+
+## 📢 Seeking arXiv Endorsement
+
+I'd like to submit this work to arXiv (cs.AI) but need an endorser as a first-time submitter.
+[Link to endorse](https://arxiv.org/auth/endorse?x=NCHNJN)
+
+If you've published in these categories and are willing to endorse, please [open an issue](https://github.com/yoctotta-softwares/optical-perceptron/issues) or reach out directly.
+
+**Already citable via Zenodo:** [10.5281/zenodo.18047298](https://doi.org/10.5281/zenodo.18047298)
