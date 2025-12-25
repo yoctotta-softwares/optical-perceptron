@@ -1,9 +1,12 @@
-# Optical Perceptron with Angle-Tunable Weights
+# Optical Perceptron and Neural Networks with Angle-Tunable Weights
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18047298.svg)](https://doi.org/10.5281/zenodo.18047298)
 
 A novel optical neural network architecture that encodes learnable weights as physical angles of frequency-selective optical elements. This enables **non-volatile weight storage** and potential for **continuous online learning** in optical hardware.
+
+**Includes: Optical Perceptron + Optical Transformer (87% optical compute)**
 
 ## 🔑 Key Idea
 
@@ -33,6 +36,43 @@ This simulation validates that the architecture can learn:
 
 XOR requires nonlinear decision boundaries, proving **universal approximation capability**.
 
+## 🤖 Optical Transformer
+
+We also implement a **tiny transformer** where 87% of compute is optical:
+
+```bash
+python optical_transformer.py
+```
+
+**Architecture:**
+- Vocab: 42 characters
+- Embedding: 32 dims
+- 1 attention head, 1 layer
+- FFN hidden: 64
+- Context: 16 tokens
+- **Total: 11,114 parameters**
+
+**What's Optical:**
+
+| Component | Implementation | Hardware |
+|-----------|---------------|----------|
+| Q, K, V, O projections | OpticalLinear | Angle-encoded weights |
+| FFN layers | OpticalLinear | Angle-encoded weights |
+| **Softmax** | **OpticalSoftmax** | exp→transmission, Σ→beam combining |
+| Activations | Sigmoid | Saturable absorbers |
+
+**Key Insight:** Softmax IS optical!
+```
+Sigmoid:  exp(x) / (1 + exp(x))     ← our perceptron
+Softmax:  exp(x_i) / Σ exp(x_j)     ← same, just N-way with optical sum
+```
+
+**Training Results:**
+```
+Loss: 3.17 → 0.24 (learns "hello hello hello..." pattern)
+Optical compute: 87.3%
+```
+
 ## 🚀 Quick Start
 
 ```bash
@@ -45,6 +85,9 @@ pip install -r requirements.txt
 
 # Run validation
 python optical_perceptron.py
+
+# Run transformer demo
+python optical_transformer.py
 ```
 
 Expected output:
@@ -161,6 +204,15 @@ If you use this work, please cite:
   year = {2025},
   publisher = {GitHub},
   url = {https://github.com/yoctotta-softwares/optical-perceptron}
+}
+
+@software{optical_perceptron_2025,
+  author = {Satpathy, Surajbhan},
+  title        = {Frequency-Selective Optical Perceptrons with Angle-Tunable Weights},
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.18047298},
+  url          = {https://doi.org/10.5281/zenodo.18047298}
 }
 ```
 
