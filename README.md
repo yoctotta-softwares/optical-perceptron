@@ -38,6 +38,22 @@ We created a computer simulation that proves this concept works. Our simulated o
 
 We also built a simple version of the same technology that powers modern AI assistants—a "transformer" architecture—where 87% of the computation happens optically.
 
+### Shrinking It Down: No Motors Needed
+
+The tabletop version uses motorized mounts to tilt filters, but the real potential is at the **chip scale**. Several technologies can adjust optical properties electronically—no moving parts:
+
+- **Liquid crystals**: The same technology in your phone screen. Apply a small voltage, and the crystal molecules rotate, changing how light passes through. Already mass-produced and cheap.
+
+- **MEMS mirrors**: Microscopic mirrors etched into silicon that tilt using tiny electrical forces. Thousands fit on a fingernail. Used in projectors and telecom switches today.
+
+- **Electro-optic materials**: Certain crystals (like lithium niobate) change their optical properties when voltage is applied. No physical movement at all—the electrons rearrange and light behaves differently.
+
+- **Phase-change materials**: Materials that switch between glassy and crystalline states, changing how they transmit light. Already used in rewritable DVDs.
+
+The same principle applies: changing a voltage is equivalent to changing an angle. The weight is still stored physically (in the material's state), but now you can adjust millions of weights in microseconds, on a chip the size of your thumbnail.
+
+**This is how optical AI could eventually fit inside your phone.**
+
 ### What's Next
 
 The simulation works. Now someone needs to build the real thing. We're looking for collaborators with optics labs, laser equipment, and photonics expertise to take this from simulation to reality.

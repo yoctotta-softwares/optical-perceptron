@@ -47,6 +47,34 @@ One of our key findings is that a crucial part of modern AI—something called "
 
 In technical terms: the exponential functions at the heart of attention mechanisms behave exactly like how light transmission changes with filter angle. And the summation operation that normalizes attention weights? In optics, you get that for free just by pointing all your light beams at a single detector. What requires expensive computation in electronics is essentially free in optics.
 
+## Shrinking It Down: No Motors Needed
+
+You might be thinking: "Motorized mounts tilting pieces of glass? That sounds bulky and slow." You'd be right—but that's just the proof-of-concept version.
+
+The real potential is at the **chip scale**, using technologies that change optical properties electronically, with no moving parts at all:
+
+**Liquid Crystals** — The exact same technology in your phone screen and digital watches. Apply a tiny voltage, and the crystal molecules rotate, changing how light passes through. These are already manufactured by the billions and cost pennies. Your phone's screen is essentially millions of tiny, individually controllable optical filters.
+
+**MEMS Mirrors** — Microscopic mirrors etched into silicon chips that tilt using tiny electrical forces. We're talking thousands of mirrors on something the size of your fingernail. This technology already exists in projectors, fiber optic switches, and LIDAR sensors in self-driving cars.
+
+**Electro-Optic Crystals** — Certain special materials (like lithium niobate, used in fiber optic communications) change their optical properties when you apply voltage. Nothing physically moves—the electrons inside rearrange, and light passing through behaves differently. Adjustments happen in nanoseconds.
+
+**Phase-Change Materials** — Materials that can switch between a glassy state and a crystalline state when heated briefly. Each state transmits light differently. This is the same technology that made rewritable DVDs work, now being adapted for computing.
+
+### Why This Matters for the Future
+
+The same fundamental principle applies at any scale: instead of physically tilting a filter with a motor, you're electrically adjusting how a material handles light. Changing a voltage becomes equivalent to changing an angle.
+
+The weight is still stored physically (in the material's molecular state), so it still doesn't need power to remember. But now you can:
+
+- Fit millions of optical weights on a single chip
+- Adjust any weight in microseconds (or faster)
+- Mass-produce it using existing semiconductor factories
+
+**This is how optical AI could eventually fit inside your phone, your watch, or even medical implants.**
+
+Imagine AI that runs on light, consumes almost no power, and fits on a chip smaller than your fingernail. That's the long-term vision.
+
 ## What's Next
 
 The simulation works. The math checks out. Now someone needs to build the real thing.
