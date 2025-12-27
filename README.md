@@ -6,6 +6,46 @@
 
 A novel optical neural network architecture that encodes learnable weights as physical angles of frequency-selective optical elements. This enables **non-volatile weight storage** and potential for **continuous online learning** in optical hardware.
 
+---
+
+## Plain English Summary
+
+**What if computers could think using light instead of electricity?**
+
+Today's AI systems like ChatGPT run on computer chips that use electricity flowing through billions of tiny switches. This works, but it's slow (electrons move sluggishly compared to light) and uses enormous amounts of energy (those switches get hot).
+
+This project proposes a different approach: **build AI that runs on light**.
+
+### The Core Idea
+
+Imagine a piece of colored glass. Tilt it one way, and red light passes through easily. Tilt it another way, and the red light gets blocked. This simple physical fact—that tilting a filter changes how much light gets through—is the foundation of our entire system.
+
+In a normal AI, the "brain" is made of millions of numbers called "weights" that determine how the system responds to inputs. These weights are stored as electrical signals that vanish the moment you cut the power.
+
+In our optical AI, **the weights are physical angles**. Each piece of optical glass is mounted on a tiny motor. The angle of each piece IS the weight. Turn off the power, and the angles stay exactly where they are—the AI remembers everything without using any electricity.
+
+### Why This Matters
+
+1. **Speed**: Light travels at 300,000 kilometers per second. Once you set up the optical system, the AI's thinking happens literally at the speed of light.
+
+2. **Energy**: Regular AI chips burn through electricity to flip billions of switches. Our optical approach uses passive glass and filters—they just sit there letting light through. No switching, no wasted energy.
+
+3. **Learning on the fly**: Because the weights are just angles, the AI can learn new things by simply tilting its optical components. No need to retrain everything from scratch on a supercomputer.
+
+### What We Built
+
+We created a computer simulation that proves this concept works. Our simulated optical system successfully learned basic logic (AND, OR, NOT operations) and even solved the classic "XOR problem" that stumped early AI researchers in the 1960s.
+
+We also built a simple version of the same technology that powers modern AI assistants—a "transformer" architecture—where 87% of the computation happens optically.
+
+### What's Next
+
+The simulation works. Now someone needs to build the real thing. We're looking for collaborators with optics labs, laser equipment, and photonics expertise to take this from simulation to reality.
+
+**This is open source and freely available for anyone to build upon.**
+
+---
+
 **Includes: Optical Perceptron + Optical Transformer (87% optical compute)**
 
 ## 🔑 Key Idea
